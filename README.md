@@ -2,6 +2,8 @@
 
 Even when `chrome.runtime.sendMessage` is triggered as a result of a user gesture, `chrome.runtime.onMessage.addListener` loses the context of being within a user gesture.
 
+https://issues.chromium.org/issues/326889650
+
 ## How to reproduce
 
 1. Build
