@@ -9,8 +9,8 @@ chrome.action.onClicked.addListener(async (tab) => {
   if (!offscreenDocument) {
     // Create an offscreen document.
     await chrome.offscreen.createDocument({
-      url: new URL("./offscreen.html", import.meta.url).href,
-      reasons: [chrome.offscreen.Reason.USER_MEDIA],
+      url: "./offscreen.html",
+      reasons: ["USER_MEDIA"],
       justification: "Recording from chrome.tabCapture API",
     });
   }

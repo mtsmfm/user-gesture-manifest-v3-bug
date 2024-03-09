@@ -1,11 +1,10 @@
 {
-  "$schema": "https://json.schemastore.org/chrome-manifest.json",
   "name": "User gesture manifest v3 bug",
   "description": "User gesture manifest v3 bug",
   "version": "0.1.0",
   "permissions": ["offscreen"],
   "background": {
-    "service_worker": "src/background.ts",
+    "service_worker": "background.js",
     "type": "module"
   },
   "action": {

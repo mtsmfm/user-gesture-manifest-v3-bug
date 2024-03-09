@@ -1,7 +1,3 @@
-interface Window {
-  documentPictureInPicture: any;
-}
-
 chrome.runtime.onMessage.addListener(async () => {
   try {
     await window.documentPictureInPicture.requestWindow();
